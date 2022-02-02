@@ -70,9 +70,9 @@ echo "<br>" ."Q. 4: To Check if the user is able to vote?" ;
 <body>
     <form action="exercise3.php" method ="get"><br>
         Your Name: <br>
-        <input name="your_name" ><br>
+        <input type = "text" name="your_name" ><br>
         Your Age: <br>
-        <input name="your_age" ><br><br>
+        <input type = "number" name="your_age" ><br><br>
         
         <button type = "submit">Submit</button>
 
@@ -83,21 +83,57 @@ echo "<br>" ."Q. 4: To Check if the user is able to vote?" ;
 
 <?php
 
-$name = $_GET["your_name"];
-$age = $_GET["your_age"];
-
-
+if(isset($_GET['your_name']) && isset($_GET['your_age'])){
+    
+    $name = $_GET["your_name"];
+    
+    $age = $_GET["your_age"];
 
 if ($age >= 18) {
 
-    echo "<br>" . "Hello " . $name . " ! You are eligible for voting";
+    echo "<br>" . "Hello " . $name . " ! You are eligible for voting.";
 }
 
 else{
-    echo "<br>" . "Hello " . $name . " ! You are not eligible for voting...";
+    echo "<br>" . "Hello " . $name . " ! You are not eligible for voting.";
+    
+}
+
+}
+
+
+echo "<br>" ."Q. 5: To draw a pattern by using loop?" ;
+
+echo "<br>";
+echo "<br>";
+
+for($a = 8; $a >= 1; $a--){
+    for($b = 1; $b <=$a; $b++){
+        echo "$b";
+    }
+    echo "<br>";
+}
+
+echo "<br>";
+
+echo "<br>" ."Q. 6: To draw a * pattern by using While loop?" ;
+
+echo "<br>";
+
+$c = 0;
+while ($c <= 8) {
+	$d = 1;
+	while ( $d <= $c) {
+		$d++;
+		echo "*";
+	}
+	echo "<br>";
+	$c++;
+
 }
 
 ?>
+
 
 
 
