@@ -63,8 +63,42 @@ elseif($gradeOfStudent < 50){
 echo "<br>";
 
 echo "<br>" ."Q. 4: To Check if the user is able to vote?" ;
+?>
+
+<html>
+
+<body>
+    <form action="exercise3.php" method ="get"><br>
+        Your Name: <br>
+        <input name="your_name" ><br>
+        Your Age: <br>
+        <input name="your_age" ><br><br>
+        
+        <button type = "submit">Submit</button>
+
+
+    </form>
+</body>
+</html>
+
+<?php
+
+$name = $_GET["your_name"];
+$age = $_GET["your_age"];
 
 
 
+if ($age >= 18) {
+
+    echo "<br>" . "Hello " . $name . " ! You are eligible for voting";
+}
+
+else{
+    echo "<br>" . "Hello " . $name . " ! You are not eligible for voting...";
+}
 
 ?>
+
+
+
+
