@@ -129,8 +129,16 @@ while ($c <= 8) {
 	}
 	echo "<br>";
 	$c++;
-
 }
+
+echo "<br>" ."Q. 7: To add a link of GitHub repo?" ;
+
+echo "<br>";
+echo "<br>";
+
+echo "<a href=https://github.com/hafizkh> GitHub Portfolio </a>";
+echo "<br>";
+
 
 ?>
 
