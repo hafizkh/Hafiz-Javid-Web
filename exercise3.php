@@ -11,7 +11,7 @@ echo "<br>" ."Q. 1: To Check whether the current month is August or not?" ;
 
 $month = date('F');
 
-if (date('F' == "August")){
+if ($month == "August"){
     echo "<br>" ."It's August, so it's still holiday." ;
 }
 
