@@ -136,7 +136,7 @@ echo "<br>" ."Q. 7: To add a link of GitHub repo?" ;
 echo "<br>";
 echo "<br>";
 
-echo "<a href=https://github.com/hafizkh> GitHub Portfolio </a>";
+echo "<a href=https://github.com/hafizkh/Webdsite-User-Interface/tree/master/Project-Hambur-navbar> Website User interface </a>";
 echo "<br>";
 
 
