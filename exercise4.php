@@ -116,7 +116,7 @@ for ($i=0; $i< 5; $i++)
 echo $temp_array[$i].", ";
 }
 echo "<h3>Q d. Explain the following loop</h3>";
-echo "<h5>Ans: The following loop is being used to find the highest recorded temperatures from the above sorted array.</h5>";
+echo "<h5>Ans: The following loop is being used to find the highest recorded temperatures from the above sorted array. The first condition in the loop is determined the highest temperature values as the array is sorted into ascending alphabetical values and prints the last five values(Highest Values) from the above array and stops the loop.</h5>";
 echo "<br>List of five highest temperatures :";
 for ($i=($temp_array_length-5); $i< ($temp_array_length); $i++)
 {
